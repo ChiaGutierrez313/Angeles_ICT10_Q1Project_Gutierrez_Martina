@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chi-Click!.✦ ݁˖| SKU Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.2.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.2.3/core.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>.✦ ݁˖ Chi-Click! .✦ ݁˖</h1>
+        <p>Find your <i>chi</i>ll.</p>
+    </header>
+
+    <nav>
+    <a href="index.html">Home</a> |
+    <a href="sku.html">SKU Generator</a>
+</nav>
+
+    <main>
+        <h2>SKU Generator</h2>
+        <p>Generate a simple product code using the category, product, and stock quantity.</p>
+
+        <section class="panel">
+            <label for="category">Select Category:</label>
+            <select id="category">
+                <option value="">-- Select a category --</option>
+                <option value="KEY">Keycap Clickers</option>
+                <option value="SET">Clicker Sets</option>
+                <option value="MINI">Mini Keyboards</option>
+            </select>
+
+            <label for="sku_product">Select Product:</label>
+            <select id="sku_product">
+                <option value="">-- Select a product --</option>
+                <option value="Solo Chi">Solo Chi</option>
+                <option value="The Baby Chi">The Baby Chi</option>
+                <option value="The Not-so-baby Chi">The Not-so-baby Chi</option>
+            </select>
+
+            <label for="stock_quantity">Stock Quantity:</label>
+            <input type="number" id="stock_quantity" min="1" placeholder="Enter stock quantity">
+
+            <button id="sku_button">Generate SKU</button>
+        </section>
+
+        <section class="panel">
+            <h2>Generated SKU</h2>
+            <pre id="sku_output">Your SKU will appear here.</pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Chi-Click! — Product Code Generator</p>
+    </footer>
+
+    <script type="py" src="./main.py"></script>
+</body>
+</html>
